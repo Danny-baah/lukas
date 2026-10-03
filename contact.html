@@ -198,90 +198,77 @@
       </section>
 
       <!-- ==========================================================================
-           EINSATZGEBIET SECTION
-           Map-dominant editorial section with custom regional cartography
+           EINSATZGEBIET SECTION (RHEIN-SELZ REGIONAL)
+           Map-dominant editorial section matching visual specification
            ========================================================================== -->
       <section class="service-area-editorial-section" id="einsatzgebiet" aria-labelledby="einsatzgebiet-heading">
         
         <div class="service-area-container">
           
-          <div class="service-area-main-wrap">
+          <!-- Upper Composition: Left Intro & Metrics + Right Regional Map -->
+          <div class="sa-upper-grid">
             
-            <!-- Left Editorial Text Column (32-35%) -->
-            <div class="service-area-info-col">
+            <!-- Left Info Block -->
+            <div class="sa-intro-block">
               
-              <!-- Eyebrow -->
-              <div class="service-area-eyebrow service-area-anim" style="--sa-delay: 0.1s;">
-                <span class="red-line" aria-hidden="true"></span>
-                <span class="eyebrow-text">EINSATZGEBIET</span>
+              <!-- Eyebrow with Lukas red accent bar -->
+              <div class="sa-eyebrow service-area-anim" style="--sa-delay: 0.1s;">
+                <span class="sa-red-bar" aria-hidden="true"></span>
+                <span class="sa-eyebrow-text">EINSATZGEBIET</span>
               </div>
 
-              <!-- Main Headline (h2) -->
-              <h2 id="einsatzgebiet-heading" class="service-area-headline service-area-anim" style="--sa-delay: 0.18s;">
-                Wir sind<br>
-                <span class="accent-red">vor Ort.</span>
+              <!-- Main Editorial Headline (Playfair Display) -->
+              <h2 id="einsatzgebiet-heading" class="sa-heading service-area-anim" style="--sa-delay: 0.18s;">
+                Rhein-Selz.<br>
+                Wir sind in <span class="accent-red">Ihrer Nähe.</span>
               </h2>
 
               <!-- Supporting Copy -->
-              <p class="service-area-lead service-area-anim" style="--sa-delay: 0.26s;">
-                Von Wiesbaden aus betreuen wir Kunden in der umliegenden Region. Kurze Wege, persönliche Betreuung und ein Ansprechpartner vor Ort.
+              <p class="sa-lead service-area-anim" style="--sa-delay: 0.26s;">
+                Zuverlässiger Service für Privathaushalte und Unternehmen in Nierstein, Oppenheim und allen umliegenden Orten der Verbandsgemeinde Rhein-Selz. Schnell vor Ort, persönlich und zuverlässig.
               </p>
 
-              <!-- Red Separator Line (70px) -->
-              <div class="service-area-sep service-area-anim" style="--sa-delay: 0.32s;" aria-hidden="true">
-                <span class="red-sep-line"></span>
-              </div>
-
-              <!-- 3 Editorial Information Rows -->
-              <div class="service-area-rows service-area-anim" style="--sa-delay: 0.38s;">
+              <!-- Regional Information Row (3 understated points) -->
+              <div class="sa-info-row service-area-anim" style="--sa-delay: 0.32s;">
                 
-                <!-- Row 01: Regionale Betreuung -->
-                <div class="service-area-row-item">
-                  <div class="row-icon" aria-hidden="true">
-                    <!-- Location pin outline icon -->
-                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e1252b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Point 01: 20 Orte in der Region -->
+                <div class="sa-info-item">
+                  <div class="sa-info-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#e1252b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                       <circle cx="12" cy="10" r="3"/>
                     </svg>
                   </div>
-                  <div class="row-divider" aria-hidden="true"></div>
-                  <div class="row-text">
-                    <h3 class="row-title">Regionale Betreuung</h3>
-                    <p class="row-desc">Wiesbaden und umliegende Orte</p>
+                  <div class="sa-info-text">
+                    <span class="sa-info-num">20</span>
+                    <span class="sa-info-label">ORTE IN DER<br>REGION</span>
                   </div>
                 </div>
 
-                <!-- Row 02: Kurze Wege -->
-                <div class="service-area-row-item">
-                  <div class="row-icon" aria-hidden="true">
-                    <!-- Clock outline icon -->
-                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e1252b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Point 02: Rhein-Selz Landkreis Mainz-Bingen -->
+                <div class="sa-info-item">
+                  <div class="sa-info-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#e1252b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                  </div>
+                  <div class="sa-info-text">
+                    <span class="sa-info-title">RHEIN-SELZ</span>
+                    <span class="sa-info-sub">LANDKREIS<br>MAINZ-BINGEN</span>
+                  </div>
+                </div>
+
+                <!-- Point 03: Schnell vor Ort -->
+                <div class="sa-info-item">
+                  <div class="sa-info-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#e1252b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                       <circle cx="12" cy="12" r="10"/>
                       <polyline points="12 6 12 12 16 14"/>
                     </svg>
                   </div>
-                  <div class="row-divider" aria-hidden="true"></div>
-                  <div class="row-text">
-                    <h3 class="row-title">Kurze Wege</h3>
-                    <p class="row-desc">Schnell und flexibel</p>
-                  </div>
-                </div>
-
-                <!-- Row 03: Persönlicher Ansprechpartner -->
-                <div class="service-area-row-item">
-                  <div class="row-icon" aria-hidden="true">
-                    <!-- People / Community outline icon -->
-                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#e1252b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                      <circle cx="9" cy="7" r="4"/>
-                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
-                  </div>
-                  <div class="row-divider" aria-hidden="true"></div>
-                  <div class="row-text">
-                    <h3 class="row-title">Persönlicher Ansprechpartner</h3>
-                    <p class="row-desc">Direkt aus der Region</p>
+                  <div class="sa-info-text">
+                    <span class="sa-info-title">SCHNELL</span>
+                    <span class="sa-info-sub">VOR ORT</span>
                   </div>
                 </div>
 
@@ -289,13 +276,13 @@
 
             </div>
 
-            <!-- Right Map Area (65-68%) -->
-            <div class="service-area-map-col service-area-anim" style="--sa-delay: 0.25s;">
-              <div class="service-area-map-inner">
+            <!-- Right Map Area (Centerpiece) -->
+            <div class="sa-map-block service-area-anim" style="--sa-delay: 0.22s;">
+              <div class="sa-map-wrapper">
                 <img 
-                  src="/images/service-area-regional-map.jpg" 
-                  alt="Detaillierte redaktionelle Karte des Einsatzgebietes Wiesbaden, Taunus und Rhein-Main" 
-                  class="service-area-map-img"
+                  src="/images/service-area-rhein-selz-map.jpg" 
+                  alt="Redaktionelle Karte des Einsatzgebietes Rhein-Selz mit Nierstein, Oppenheim und den umliegenden 20 Gemeinden" 
+                  class="sa-map-image"
                   loading="lazy"
                 />
               </div>
@@ -303,11 +290,64 @@
 
           </div>
 
-          <!-- Bottom Regional Label with Lines on Both Sides -->
-          <div class="service-area-bottom-bar service-area-anim" style="--sa-delay: 0.45s;">
-            <span class="bar-line" aria-hidden="true"></span>
-            <span class="bar-text">WIESBADEN &nbsp;·&nbsp; TAUNUS &nbsp;·&nbsp; RHEIN-MAIN</span>
-            <span class="bar-line" aria-hidden="true"></span>
+          <!-- Lower Wide Composition: UNSERE EINSATZORTE (Full-Width 4-Column Editorial Showcase) -->
+          <div class="sa-locations-wide-section service-area-anim" style="--sa-delay: 0.38s;">
+            
+            <div class="sa-locations-header">
+              <span class="sa-red-bar" aria-hidden="true"></span>
+              <h3 class="sa-locations-title">UNSERE EINSATZORTE</h3>
+            </div>
+
+            <!-- 4-Column Town List Spanning Full Content Width -->
+            <div class="sa-towns-full-grid">
+              
+              <!-- Column 1 -->
+              <div class="sa-town-col">
+                <span class="sa-town-name">Dalheim</span>
+                <span class="sa-town-name">Dexheim</span>
+                <span class="sa-town-name">Dienheim</span>
+                <span class="sa-town-name">Dolgesheim</span>
+                <span class="sa-town-name">Dorn-Dürkheim</span>
+              </div>
+
+              <!-- Column 2 -->
+              <div class="sa-town-col">
+                <span class="sa-town-name">Eimsheim</span>
+                <span class="sa-town-name">Friesenheim</span>
+                <span class="sa-town-name">Guntersblum</span>
+                <span class="sa-town-name">Hahnheim</span>
+                <span class="sa-town-name">Hillesheim</span>
+              </div>
+
+              <!-- Column 3 -->
+              <div class="sa-town-col">
+                <span class="sa-town-name">Köngernheim</span>
+                <span class="sa-town-name">Ludwigshöhe</span>
+                <span class="sa-town-name">Mommenheim</span>
+                <span class="sa-town-name">Nierstein</span>
+                <span class="sa-town-name">Oppenheim</span>
+              </div>
+
+              <!-- Column 4 -->
+              <div class="sa-town-col">
+                <span class="sa-town-name">Selzen</span>
+                <span class="sa-town-name">Uelversheim</span>
+                <span class="sa-town-name">Undenheim</span>
+                <span class="sa-town-name">Weinolsheim</span>
+                <span class="sa-town-name">Wintersheim</span>
+              </div>
+
+            </div>
+
+            <!-- Regional Closing Statement -->
+            <div class="sa-closing-block">
+              <span class="sa-gold-bar" aria-hidden="true"></span>
+              <p class="sa-closing-text">VON DALHEIM BIS WINTERSHEIM. FÜR IHRE SICHERHEIT VOR ORT.</p>
+            </div>
+
+            <!-- Subtle Decorative Regional Background Texture in bottom-right corner -->
+            <div class="sa-locations-bg-texture" aria-hidden="true"></div>
+
           </div>
 
         </div>
@@ -642,92 +682,123 @@
                 <span class="footer-brand-main">LUKAS</span>
                 <span class="footer-brand-accent-line" aria-hidden="true"></span>
               </div>
-              <span class="footer-brand-sub">SICHERHEITSTECHNIK</span>
+              <div class="footer-brand-sub">
+                <span>SCHLÜSSELDIENST</span>
+                <span>&amp; SICHERHEITSTECHNIK</span>
+              </div>
             </a>
             
-            <p class="footer-brand-tagline">
-              Ihr zertifizierter Experte für professionelle Schließtechnik, beschädigungsfreie Türöffnungen und ganzheitliche Sicherheitskonzepte in Wiesbaden und Umgebung.
+            <p class="footer-brand-desc">
+              Ihr zuverlässiger Partner für Schlüsseldienst, Sicherheitstechnik und individuelle Lösungen – persönlich, regional und professionell.
             </p>
-
-            <div class="footer-brand-meta">
-              <div class="footer-meta-item">
-                <span class="meta-label">Standort:</span>
-                <span class="meta-val">Wiesbaden &amp; Rhein-Main</span>
-              </div>
-              <div class="footer-meta-item">
-                <span class="meta-label">Bereitschaft:</span>
-                <span class="meta-val text-red">24/7 Notdienst verfügbar</span>
-              </div>
+            
+            <!-- Quick Contact / Social Outline Icons -->
+            <div class="footer-social-links" aria-label="Schnellkontakt und Social Media">
+              <a href="tel:+4916091885082" class="footer-social-icon-link" aria-label="Telefon: 0160 91885082 anrufen">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </a>
+              <a href="mailto:info@lukas-sicherheit.de" class="footer-social-icon-link" aria-label="E-Mail: info@lukas-sicherheit.de schreiben">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon-link" aria-label="Instagram Profil besuchen">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+              </a>
             </div>
           </div>
 
           <!-- Column 2: Navigation -->
-          <div class="footer-col footer-col-nav footer-anim" style="--footer-delay: 0.1s;">
-            <span class="footer-col-title">NAVIGATION</span>
-            <ul class="footer-nav-list" role="list">
-              <li><a href="/" class="footer-link">Home</a></li>
-              <li><a href="/about.html" class="footer-link">Über Lukas</a></li>
-              <li><a href="/services.html" class="footer-link">Leistungen</a></li>
-              <li><a href="/pricing.html" class="footer-link">Preise &amp; Ablauf</a></li>
-              <li><a href="/contact.html" class="footer-link active">Einsatzgebiet &amp; Kontakt</a></li>
-            </ul>
+          <div class="footer-col footer-col-nav footer-anim" style="--footer-delay: 0.12s;">
+            <div class="footer-heading-wrap">
+              <span class="footer-red-line" aria-hidden="true"></span>
+              <h2 class="footer-heading">NAVIGATION</h2>
+            </div>
+            <nav class="footer-nav" aria-label="Footer-Navigation">
+              <ul class="footer-link-list">
+                <li><a href="/" class="footer-link">Startseite</a></li>
+                <li><a href="/services.html" class="footer-link">Leistungen</a></li>
+                <li><a href="/about.html" class="footer-link">Über Lukas</a></li>
+                <li><a href="/pricing.html" class="footer-link">Preise &amp; Ablauf</a></li>
+                <li><a href="/contact.html" class="footer-link active">Einsatzgebiet</a></li>
+                <li><a href="/contact.html" class="footer-link active">Kontakt</a></li>
+              </ul>
+            </nav>
           </div>
 
           <!-- Column 3: Leistungen -->
-          <div class="footer-col footer-col-services footer-anim" style="--footer-delay: 0.15s;">
-            <span class="footer-col-title">LEISTUNGEN</span>
-            <ul class="footer-nav-list" role="list">
-              <li><a href="/services.html#notdienst" class="footer-link">24/7 Notöffnungen</a></li>
-              <li><a href="/services.html#schlosswechsel" class="footer-link">Schloss- &amp; Zylinderwechsel</a></li>
-              <li><a href="/services.html#einbruchschutz" class="footer-link">Mechanischer Einbruchschutz</a></li>
-              <li><a href="/services.html#schliessanlagen" class="footer-link">Schließanlagen &amp; Systeme</a></li>
-              <li><a href="/services.html#sicherheitsberatung" class="footer-link">Objektsicherheit &amp; Beratung</a></li>
+          <div class="footer-col footer-col-services footer-anim" style="--footer-delay: 0.18s;">
+            <div class="footer-heading-wrap">
+              <span class="footer-red-line" aria-hidden="true"></span>
+              <h2 class="footer-heading">LEISTUNGEN</h2>
+            </div>
+            <ul class="footer-link-list">
+              <li><a href="/services.html#tueroeffnung" class="footer-link">Schlüsseldienst</a></li>
+              <li><a href="/services.html#sicherheitstechnik" class="footer-link">Sicherheitstechnik</a></li>
+              <li><a href="/services.html#sicherheitstechnik" class="footer-link">Einbruchschutz</a></li>
+              <li><a href="/services.html#sicherheitstechnik" class="footer-link">Schließanlagen</a></li>
+              <li><a href="/services.html#loesungen" class="footer-link">Individuelle Lösungen</a></li>
             </ul>
           </div>
 
-          <!-- Column 4: Kontakt & Erreichbarkeit -->
-          <div class="footer-col footer-col-contact footer-anim" style="--footer-delay: 0.2s;">
-            <span class="footer-col-title">KONTAKT</span>
-            <address class="footer-contact-details">
-              <div class="footer-contact-row">
-                <div class="footer-icon-box" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.44-5.15-3.75-6.59-6.59l1.97-1.57c.28-.28.36-.67.25-1.02A11.36 11.36 0 0 1 8.97 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.97c0-.55-.45-1-.99-1z"/>
+          <!-- Column 4: Kontakt -->
+          <div class="footer-col footer-col-contact footer-anim" style="--footer-delay: 0.24s;">
+            <div class="footer-heading-wrap">
+              <span class="footer-red-line" aria-hidden="true"></span>
+              <h2 class="footer-heading">KONTAKT</h2>
+            </div>
+            
+            <address class="footer-contact-list">
+              <!-- Location -->
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e1252b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
                   </svg>
                 </div>
                 <div class="footer-contact-text">
-                  <a href="tel:+4916091885082" class="footer-contact-bold">0160 91885082</a>
-                  <span class="footer-contact-muted">Mobil &amp; WhatsApp erreichbar</span>
+                  <span class="footer-contact-bold">Rhein-Selz &amp; Umgebung</span>
+                  <span class="footer-contact-muted">Einsatzgebiet in der Region</span>
                 </div>
               </div>
-
-              <div class="footer-contact-row">
-                <div class="footer-icon-box" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              
+              <!-- Phone -->
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e1252b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                   </svg>
                 </div>
                 <div class="footer-contact-text">
-                  <a href="mailto:info@schluesseldienstlukas.de" class="footer-contact-bold">info@schluesseldienstlukas.de</a>
-                  <span class="footer-contact-muted">Direkte E-Mail-Anfrage</span>
+                  <a href="tel:+4916091885082" class="footer-contact-link">0160 91885082</a>
                 </div>
               </div>
-
-              <div class="footer-contact-row">
-                <div class="footer-icon-box" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              
+              <!-- Email -->
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e1252b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
                   </svg>
                 </div>
                 <div class="footer-contact-text">
-                  <span class="footer-contact-bold">Adolf-Todt-Straße 11</span>
-                  <span class="footer-contact-muted">65203 Wiesbaden</span>
+                  <a href="mailto:info@lukas-sicherheit.de" class="footer-contact-link email-link">info@lukas-sicherheit.de</a>
                 </div>
               </div>
-
-              <div class="footer-contact-row">
-                <div class="footer-icon-box" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              
+              <!-- Availability -->
+              <div class="footer-contact-item">
+                <div class="footer-contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#e1252b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"/>
                     <polyline points="12 6 12 12 16 14"/>
                   </svg>
