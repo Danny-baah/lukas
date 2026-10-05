@@ -215,7 +215,7 @@ button {
   display: flex;
   align-items: baseline;
   gap: 0.35rem;
-  font-size: 1.35rem;
+  font-size: clamp(0.95rem, 1.22vw, 1.25rem);
   font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--text-white);
@@ -239,6 +239,15 @@ button {
   color: var(--text-silver);
   margin-top: 0.25rem;
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .brand-title {
+    font-size: clamp(0.85rem, 3.2vw, 1.05rem);
+  }
+  .brand-sub {
+    font-size: 0.6rem;
+  }
 }
 
 /* Center Horizontal Links */
@@ -4543,11 +4552,11 @@ button {
 }
 
 .footer-brand-main {
-  font-size: 2.1rem;
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
   font-weight: 800;
   color: #F7F6F2;
-  letter-spacing: -0.02em;
-  line-height: 1;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
   font-family: var(--font-hero);
 }
 
@@ -4807,19 +4816,41 @@ button {
   background-color: rgba(255, 255, 255, 0.12);
 }
 
+.footer-divider-wrap {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
 /* Bottom Legal Bar */
 .footer-bottom-bar {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
   flex-wrap: wrap;
+  padding-block: 1.6rem 1rem;
 }
 
 .footer-copyright {
   font-family: var(--font-hero);
   font-size: 0.85rem;
+  color: #a7aaad;
+}
+
+.footer-creator {
+  font-family: var(--font-hero);
+  font-size: 0.85rem;
   color: #8c9096;
+  letter-spacing: 0.01em;
+}
+
+.footer-creator .creator-name {
+  color: #f1f5f9;
+  font-weight: 600;
 }
 
 .footer-bottom-actions {
@@ -9729,6 +9760,212 @@ button {
     opacity: 1 !important;
     transform: none !important;
   }
+}
+
+/* ==========================================================================
+   HOME PAGE - EINSATZGEBIET REGIONAL PREVIEW TEASER
+   Compact regional teaser section directing visitors to contact / full service area
+   ========================================================================== */
+
+.service-area-preview-section {
+  position: relative;
+  width: 100%;
+  background-color: #f7f3ec;
+  color: #111216;
+  padding-block: clamp(60px, 7vw, 95px);
+  border-top: 1px solid rgba(17, 18, 22, 0.06);
+  border-bottom: 1px solid rgba(17, 18, 22, 0.06);
+  overflow: hidden;
+}
+
+.sa-preview-container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 60px);
+}
+
+.sa-preview-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+}
+
+@media (max-width: 960px) {
+  .sa-preview-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+.sa-preview-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sa-preview-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.sa-preview-red-bar {
+  display: inline-block;
+  width: 24px;
+  height: 3px;
+  background-color: #e1252b;
+  border-radius: 1px;
+}
+
+.sa-preview-eyebrow-text {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #e1252b;
+}
+
+.sa-preview-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #111216;
+  letter-spacing: -0.015em;
+  margin-bottom: 18px;
+}
+
+.sa-preview-heading .accent-red {
+  color: #e1252b;
+}
+
+.sa-preview-lead {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  line-height: 1.65;
+  color: #4a4d55;
+  margin-bottom: 28px;
+  max-width: 620px;
+}
+
+.sa-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-sa-preview-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #111216;
+  color: #ffffff;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-sa-preview-primary:hover {
+  background-color: #e1252b;
+  transform: translateY(-2px);
+}
+
+.btn-sa-preview-arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.btn-sa-preview-primary:hover .btn-sa-preview-arrow {
+  transform: translateX(4px);
+}
+
+.btn-sa-preview-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #111216;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 13px 20px;
+  border: 1.5px solid rgba(17, 18, 22, 0.2);
+  border-radius: 3px;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-sa-preview-phone:hover {
+  border-color: #e1252b;
+  color: #e1252b;
+  background-color: rgba(225, 37, 43, 0.04);
+}
+
+/* Right Metric / Highlights Card */
+.sa-preview-card {
+  background: #ffffff;
+  border: 1px solid rgba(17, 18, 22, 0.08);
+  border-radius: 4px;
+  padding: clamp(24px, 3.5vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sa-preview-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(17, 18, 22, 0.07);
+}
+
+.sa-preview-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sa-preview-item-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(225, 37, 43, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e1252b;
+}
+
+.sa-preview-item-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sa-preview-item-title {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111216;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+
+.sa-preview-item-desc {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.85rem;
+  color: #636670;
+  line-height: 1.45;
 }
 
 /* ==========================================================================

@@ -354,3 +354,50 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Production Content Protection & Inspection Deterrence
+(() => {
+  // Disable right-click context menu
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+  }, false);
+
+  // Disable DevTools shortcuts
+  document.addEventListener('keydown', (e) => {
+    // F12
+    if (e.key === 'F12' || e.keyCode === 123) {
+      e.preventDefault();
+      return false;
+    }
+    // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && ['I', 'i', 'J', 'j', 'C', 'c'].includes(e.key)) {
+      e.preventDefault();
+      return false;
+    }
+    // Ctrl+U (View Source)
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'u' || e.key === 'U')) {
+      e.preventDefault();
+      return false;
+    }
+    // Ctrl+S (Save Page)
+    if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
+      e.preventDefault();
+      return false;
+    }
+  }, false);
+
+  // Periodic console clear & copyright note
+  try {
+    const showNotice = () => {
+      console.clear();
+      console.log(
+        '%cSchlüsselnotdienst Rhein-Selz\n%cAlle Inhalte, Texte und Quellcodes sind urheberrechtlich geschützt.',
+        'color:#e1252b;font-size:16px;font-weight:bold;font-family:sans-serif;',
+        'color:#444;font-size:12px;font-family:sans-serif;'
+      );
+    };
+    showNotice();
+    setInterval(showNotice, 4000);
+  } catch (_) {}
+})();
+
+
